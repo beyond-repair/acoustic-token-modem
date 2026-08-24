@@ -1,0 +1,1 @@
+"""Latency bookkeeping placeholder."""
