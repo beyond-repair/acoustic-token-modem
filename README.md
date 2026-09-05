@@ -47,7 +47,7 @@ Theoretical bitrate is **never** reported as achieved bitrate.
 
 | Milestone | Focus |
 |-----------|--------|
-| **M0** | Repository scaffold (this commit) |
+| **M0** | Repository scaffold |
 | **M1** | Token → binary → token roundtrip |
 | **M2** | Packetization + CRC |
 | **M3** | FSK acoustic **simulation** |
@@ -73,6 +73,8 @@ python experiments/baseline_fsk.py
 
 Hardware modes (`LIVE_MIC` / `LIVE_SPEAKER`) are stubs until M10.
 
+CI: `.github/workflows/pytest.yml` runs the same `pytest tests/` suite. Green CI is **not** hardware validation and does **not** raise claim level.
+
 ---
 
 ## Metrics that matter
@@ -90,6 +92,7 @@ Always state: hardware (or sim), bandwidth, SNR, distance, modulation, FEC, pack
 - Classification: **RESEARCH** (ADL-Governance)  
 - Default claim level: **≤ 1** until measured  
 - License: MIT  
+- Sweep-066 (2026-09-05): added pytest workflow; local suite 12 passed (simulation only).
 - See [docs/RESEARCH.md](docs/RESEARCH.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [SECURITY.md](docs/SECURITY.md)
 
 ---
