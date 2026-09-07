@@ -75,7 +75,7 @@ Hardware modes (`LIVE_MIC` / `LIVE_SPEAKER`) are stubs until M10.
 
 CI: `.github/workflows/pytest.yml` runs the same `pytest tests/` suite. Green CI is **not** hardware validation and does **not** raise claim level. See [CLAIM_STATUS.md](CLAIM_STATUS.md).
 
-Last verified Actions run: **33995308862** (`success`, Sweep-066 head). Sweep-092 added claim-status file only.
+Last verified Actions run before Sweep-110: **34068585607** (`success`, Sweep-092 head). Sweep-110 added GOVERNANCE.md and explicit UNSUPPORTED tokens only.
 
 ---
 
@@ -96,7 +96,8 @@ Always state: hardware (or sim), bandwidth, SNR, distance, modulation, FEC, pack
 - License: MIT  
 - Sweep-066 (2026-09-05): added pytest workflow; suite passed in CI (simulation only).
 - Sweep-092 (2026-09-06): CLAIM_STATUS.md; no claim elevation.
-- See [docs/RESEARCH.md](docs/RESEARCH.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [SECURITY.md](docs/SECURITY.md)
+- Sweep-110 (2026-09-07): GOVERNANCE.md; UNSUPPORTED tokens; no claim elevation.
+- See [GOVERNANCE.md](GOVERNANCE.md), [docs/RESEARCH.md](docs/RESEARCH.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [SECURITY.md](docs/SECURITY.md)
 
 ---
 
