@@ -5,7 +5,7 @@
 ### Experimental acoustic modem for **direct machine-token** transmission
 
 [![RESEARCH](https://img.shields.io/badge/status-RESEARCH-3b82f6?style=for-the-badge)](https://github.com/beyond-repair/ADL-Governance)
-[![Claim level](https://img.shields.io/badge/claim-≤_1-yellow?style=for-the-badge)](docs/RESEARCH.md)
+[![Claim level](https://img.shields.io/badge/claim-≤_1-yellow?style=for-the-badge)](CLAIM_STATUS.md)
 
 </div>
 
@@ -73,7 +73,9 @@ python experiments/baseline_fsk.py
 
 Hardware modes (`LIVE_MIC` / `LIVE_SPEAKER`) are stubs until M10.
 
-CI: `.github/workflows/pytest.yml` runs the same `pytest tests/` suite. Green CI is **not** hardware validation and does **not** raise claim level.
+CI: `.github/workflows/pytest.yml` runs the same `pytest tests/` suite. Green CI is **not** hardware validation and does **not** raise claim level. See [CLAIM_STATUS.md](CLAIM_STATUS.md).
+
+Last verified Actions run: **33995308862** (`success`, Sweep-066 head). Sweep-092 added claim-status file only.
 
 ---
 
@@ -92,7 +94,8 @@ Always state: hardware (or sim), bandwidth, SNR, distance, modulation, FEC, pack
 - Classification: **RESEARCH** (ADL-Governance)  
 - Default claim level: **≤ 1** until measured  
 - License: MIT  
-- Sweep-066 (2026-09-05): added pytest workflow; local suite 12 passed (simulation only).
+- Sweep-066 (2026-09-05): added pytest workflow; suite passed in CI (simulation only).
+- Sweep-092 (2026-09-06): CLAIM_STATUS.md; no claim elevation.
 - See [docs/RESEARCH.md](docs/RESEARCH.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [SECURITY.md](docs/SECURITY.md)
 
 ---
