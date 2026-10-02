@@ -73,11 +73,20 @@ Theoretical bitrate is **never** reported as achieved bitrate.
 
 ## Quick start (simulation)
 
+Requires Python ≥ 3.10. Use a virtual environment. On PEP 668 systems (Debian/Ubuntu and many current images) `pip install` into the system interpreter is refused, and `python` / `pytest` may not be on `PATH` — only `python3`.
+
+From a clone of this repository:
+
 ```bash
-pip install -e ".[dev]"
-pytest tests/ -q
-python experiments/baseline_fsk.py
+python3 -m venv .venv
+.venv/bin/pip install -e ".[dev]"
+.venv/bin/pytest tests/ -q
+.venv/bin/python experiments/baseline_fsk.py
 ```
+
+`baseline_fsk.py` is an offline AWGN simulation. It prints one JSON list (SNR, whether the token IDs reconstructed, and BER for that seed) and writes the same JSON to `benchmarks/results/baseline_fsk_awgn.json`. That file is a simulation record, not a speaker/mic measurement and not an achieved bitrate.
+
+`experiments/baseline_psk.py` and `experiments/ofdm_density.py` print that those phases are not implemented and then exit. Do not treat them as modulators.
 
 Hardware modes (`LIVE_MIC` / `LIVE_SPEAKER`) are stubs until M10.
 

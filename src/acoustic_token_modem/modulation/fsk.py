@@ -39,7 +39,7 @@ def demodulate_fsk(
     f1: float = 4000.0,
     symbol_samples: int = 240,
 ) -> List[int]:
-    """Non-coherent energy comparison per symbol (simple baseline)."""
+    """Per-symbol correlation against the two tones (aligned simulation baseline)."""
     bits: List[int] = []
     for i in range(n_bits):
         start = i * symbol_samples
