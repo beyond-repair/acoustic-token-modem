@@ -11,6 +11,14 @@
 
 ---
 
+## Claim cap (software / simulation)
+
+**RUNNABLE SKETCH** — claim level **1** only. A stranger can clone `main`, `pip install -e ".[dev]"`, run `pytest tests/ -q`, and run `python experiments/baseline_fsk.py` for the FSK *simulation* roundtrip.
+
+This is **not** hardware validation (M10), **not** a novelty claim, and **not** permission to report theoretical bitrate as achieved. PSK / QAM / OFDM modules are intentional placeholders. See [CLAIM_STATUS.md](CLAIM_STATUS.md).
+
+---
+
 ## What this is
 
 An experimental **acoustic modem** that treats AI **token IDs** as a digital payload—not as speech to be recognized.
