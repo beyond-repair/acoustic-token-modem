@@ -14,8 +14,11 @@ This is a **research** repository under [ADL-Governance](https://github.com/beyo
 ## Tests
 
 ```bash
-pip install -e ".[dev]"
-pytest tests/ -q
+python3 -m venv .venv
+.venv/bin/pip install -e ".[dev]"
+.venv/bin/pytest tests/ -q
 ```
+
+Use the virtualenv's `python` and `pytest`. A bare `pip install` fails on externally managed interpreters (PEP 668), and `python` is not always installed as a command.
 
 The invariant `tokens_in == tokens_out` must hold for any accepted modulation path under the stated channel model.
