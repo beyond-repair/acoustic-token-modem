@@ -13,7 +13,7 @@
 
 ## Claim cap (software / simulation)
 
-**RUNNABLE SKETCH** — claim level **1** only. A stranger can clone `main`, `pip install -e ".[dev]"`, run `pytest tests/ -q`, and run `python experiments/baseline_fsk.py` for the FSK *simulation* roundtrip.
+**RUNNABLE SKETCH** — claim level **1** only. A stranger can clone `main` and follow the quick start below (a `python3 -m venv` environment, then that environment's `pip`, `pytest`, and `python`) for the FSK *simulation* roundtrip. Bare `pip`, `pytest`, and `python` are not the supported commands.
 
 This is **not** hardware validation (M10), **not** a novelty claim, and **not** permission to report theoretical bitrate as achieved. PSK / QAM / OFDM modules are intentional placeholders. See [CLAIM_STATUS.md](CLAIM_STATUS.md).
 
